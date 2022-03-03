@@ -5,8 +5,8 @@ int position = 0;
 
 void push(int number, int arr[]);
 void pop(int arr[]);
-print_array(int arr[]);
-fill_array_with_zeros(int arr[]);
+void print_array(int arr[]);
+void fill_array_with_zeros(int arr[]);
 
 int main(void)
 {
@@ -48,7 +48,7 @@ void pop(int arr[])
     // aceita da posicao 1 a 4 do array
     if (position >= 1 && position <= STACK_LENGTH)
     {
-        arr[position-1] = 0;
+        arr[position - 1] = 0;
         position--;
     }
     else
@@ -57,7 +57,7 @@ void pop(int arr[])
     }
 }
 
-print_array(int arr[])
+void print_array(int arr[])
 {
     int i;
     for (i = 0; i < STACK_LENGTH; i++)
@@ -66,7 +66,7 @@ print_array(int arr[])
     }
 }
 
-fill_array_with_zeros(int arr[])
+void fill_array_with_zeros(int arr[])
 {
     int i;
     for (i = 0; i < STACK_LENGTH; i++)
